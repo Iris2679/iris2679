@@ -6,14 +6,14 @@ This project provides a Python script that generates a Tcl script for VMD to vis
 - Structure file: .pdb or .gro file
 - Trajectory file: .xtc file
 
-# HOW TO USE python to generate tcl
-- make sure ot have JSON file to be saved in the same folder as python file
-- Open python file in VS Code, IntelliJ or notepad++
-- Change variables/and file directory in User parameters section in python file
-- 
+# How to Use Python to Generate TCL
+- Make sure the JSON file is saved in the same folder as the Python script.
+- Open the Python file (py_to_tcl.py) in VS Code, IntelliJ, or Notepad++.
+- Update the User Parameters section in the Python file with the correct file paths and variables.
+- Run the Python script. This will generate a TCL file. Example result: a2b3_example.tcl
 
 # HOW TO LOAD TCL in VMD
-1. Load .pdb/.gro file in VMD (file -> New Molecule -> filename)
-2. Load .xtc file on the structure file (file -> New Molecule -> filename)
-3. source /full/path/to/your/tcl/file
+1. Load the structure file (.pdb or .gro file) in VMD: File -> New Molecule -> [filename]
+2. Load the trajectory file (.xtc) on top of the structure file: File -> New Molecule -> [filename]
+3. Source the TCL file in VMD main: Plugin -> TK console -> source /full/path/to/your/tcl/file.tcl
 
